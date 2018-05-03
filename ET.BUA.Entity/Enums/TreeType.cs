@@ -1,0 +1,57 @@
+﻿using System;
+
+namespace ET.BUA.Entity.Enums
+{
+    [Serializable]
+    public enum TreeType
+    {
+        NavigationOrgTree,
+        SetUserOrgTree,
+        SetUserPrimaryOrgTree,
+        SetRoleOrgTree,
+        SelectOrgAuthDropDownTree,
+        SelectOrgAreaDropDownTree,
+        MoveOrgTree,
+        SetOrgAreaDropDownTree,
+        ViewOrgAreaDropDownTree,
+        ViewUserOrgAreaDropDownTree,
+        SetPostUserTree,
+        SetRoleUserTree,
+        SelectSetUserAuthDropDownTree,
+        SelectViewUserAuthDropDownTree,
+        SelectSetUserAreaDropDownTree,
+        SelectViewUserAreaDropDownTree,
+        SetPrivilegeAreaUserTreeDataProvider,
+        ViewPrivilegeAreaUserTreeDataProvider,
+        ViewUserPrivilegeAreaUserTreeDataProvider,
+        ViewOrgPrivilegeAreaUserTreeDataProvider,
+        ViewPostPrivilegeAreaUserTreeDataProvider,
+        SetUserPostTree,
+        SetRolePostTree,
+        SelectPostAuthDropDownTree,
+        SelectPostAreaDropDownTree,
+        selectAllAppDropDownTree,
+        ViewUserAppAuthDropDownTree,
+        SelectRoleAuthDropDownTree,
+        SetAttrPrivilegeGroupAttrPrivilegeTree,
+        SetPrivilegeAttrPrivilegeTree,
+        SelectPrivilegeTree,
+        MovePrivilegeTree,
+        NavigationAppTree,
+        SelectAppAuthDropDownTree,
+        SetAppAreaDropDownTree,
+        ViewAppAreaDropDownTree,
+        ViewUserAppAreaDropDownTree,
+        SetOrgRoleTree,
+        SetPostRoleTree,
+        SetUserRoleTree,
+        SelectRoleAreaDropDownTree,
+        SetAppOrgUserTree,
+        DicTree,
+        DicMoveTree,
+        SyncNavigatorTree,
+        AuditNavigatorTree,
+        SysNavigatorTree,
+        AuthNavigatorTree
+    }
+}

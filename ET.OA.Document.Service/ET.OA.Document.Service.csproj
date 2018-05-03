@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ET.BUA.Core.Entity\ET.Core.Entity.csproj" />
+    <ProjectReference Include="..\ET.BUA.Core\ET.Core.csproj" />
+    <ProjectReference Include="..\ET.OA.Document.Domain\ET.OA.Document.Domain.csproj" />
+    <ProjectReference Include="..\ET.OA.Document.Entity\ET.OA.Document.Entity.csproj" />
+  </ItemGroup>
+
+</Project>

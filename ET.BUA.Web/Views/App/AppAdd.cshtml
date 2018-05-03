@@ -1,0 +1,52 @@
+﻿@model ET.BUA.Entity.Model.ApplicationEntity
+@{
+    ViewBag.Title = "新增应用系统";
+    var returnUrl = ViewBag.ReturnUrl ?? ViewContext.HttpContext.Request.Query["ReturnUrl"];
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="ReturnUrl" value="@returnUrl" />
+    <input type="hidden" name="PhotoUrl" value="~/images/User-Avatar.png" />
+    <div class="login-panel sign-up">
+        <div class="login-panel-heading">
+            <p>
+                <a href="~/" target="_blank">
+                    <img class="logo" src="~/images/logo_min.png" alt="ZKEACMS" />
+                </a>
+            </p>
+        </div>
+        <div class="login-panel-body">
+            <div class="info-bar">
+                <p>
+                    新增应用系统
+                </p>
+                <img src="~/css/Images/picker_account_msa.svg" />
+            </div>
+            <div class="form-input">
+                <h4><label asp-for="@Model.APP_NAME" class="control-label"></label></h4>
+                <input asp-for="@Model.APP_NAME" class="form-control" />
+                <span asp-validation-for="@Model.APP_NAME" class="text-danger"></span>
+            </div>
+            <div class="form-input">
+                <h4><label asp-for="@Model.APP_CODE" class="control-label"></label></h4>
+                <input asp-for="@Model.APP_CODE" class="form-control" />
+                <span asp-validation-for="@Model.APP_CODE" class="text-danger"></span>
+            </div>
+            <div class="form-input">
+                <h4><label asp-for="@Model.APP_PASSWD" class="control-label"></label></h4>
+                <input asp-for="@Model.APP_PASSWD" class="form-control" />
+                <span asp-validation-for="@Model.APP_PASSWD" class="text-danger"></span>
+            </div>
+            @if (ViewBag.Errormessage != null)
+            {
+                <div class="text-center alert alert-danger">
+                    @ViewBag.Errormessage
+                </div>
+            }
+            <div class="form-input">
+                <input type="submit" class="btn-login" value="新增" />
+            </div>
+        </div>
+    </div>
+}

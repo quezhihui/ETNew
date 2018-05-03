@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ET.BUA.Core.Entity\ET.Core.Entity.csproj" />
+    <ProjectReference Include="..\ET.BUA.Core\ET.Core.csproj" />
+    <ProjectReference Include="..\ET.BUA.Domain\ET.BUA.Domain.csproj" />
+    <ProjectReference Include="..\ET.BUA.Entity\ET.BUA.Entity.csproj" />
+  </ItemGroup>
+
+</Project>
