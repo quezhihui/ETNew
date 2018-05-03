@@ -1,10 +1,12 @@
 ﻿using ET.Core.Entity.Base;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ET.BUA.Entity.Model
 {
     [Serializable]
+    [Table("BUA_ORGANIZATION")]
     public class BUA_ORGANIZATION : BaseDataEntity
     {
         [Key]
