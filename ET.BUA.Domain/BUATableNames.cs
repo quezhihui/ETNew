@@ -8,6 +8,9 @@ namespace ET.BUA.Domain
 
         }
         public string TablePrefix { get; set; } = "BUA_";
+
         public string ApplicationTableName { get; set; } = "APPLICATION";
+
+        public string UserTableName { get; set; } = "USER";
     }
 }

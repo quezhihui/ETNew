@@ -1,11 +1,13 @@
 ﻿using ET.Core.Entity.Base;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ET.BUA.Entity.Model
 {
     [Serializable]
-    public class BUA_USER : BaseDataEntity
+    [Table("BUA_USER")]
+    public class UserEntity : BaseDataEntity
     {
         [Key]
         public string USER_ID { get; set; } = "";

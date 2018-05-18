@@ -8,6 +8,8 @@ namespace ET.BUA.Domain
     {
         public virtual DbSet<ApplicationEntity> app { get; set; }
 
+        public virtual DbSet<UserEntity> user { get; set; }
+
         public BUAContext(DbContextOptions<BUAContext> options) : base(options)
         {
 

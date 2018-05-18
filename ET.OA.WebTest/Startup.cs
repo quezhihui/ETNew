@@ -97,7 +97,7 @@ namespace ET.OA.WebTest
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=SSO}/{action=SignOn}/{id?}");
             });
 
             app.Run(async (context) =>
