@@ -9,7 +9,7 @@ namespace ET.BUA.Entity.Custom
     [Serializable]
     public class AllUserInfo
     {
-        private BUA_USER _User;
+        private UserEntity _User;
 
         private BUA_USER_PERSON _UserPerson;
 
@@ -17,7 +17,7 @@ namespace ET.BUA.Entity.Custom
 
         private IList<BUA_USER_EX> _UserExSetList;
 
-        public BUA_USER User
+        public UserEntity User
         {
             get
             {
