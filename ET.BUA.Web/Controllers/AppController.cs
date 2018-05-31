@@ -24,10 +24,17 @@ namespace ET.BUA.Web.Controllers
             return View();
         }
 
+        //public ActionResult AppAdd(string ReturnUrl)
+        //{
+        //    ViewBag.ReturnUrl = ReturnUrl;
+        //    return View(_applicationService.GetSingleModel("BPM"));
+        //}
+
+        [HttpGet]
         public ActionResult AppAdd(string ReturnUrl)
         {
             ViewBag.ReturnUrl = ReturnUrl;
-            return View(_applicationService.GetSingleModel("BPM"));
+            return View();
         }
 
         [HttpPost, ValidateAntiForgeryToken]

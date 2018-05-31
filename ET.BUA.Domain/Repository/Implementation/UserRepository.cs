@@ -3,6 +3,7 @@ using ET.Core.Abstraction.Repo;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ET.BUA.Domain.Repository.Implementation
 {

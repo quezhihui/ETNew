@@ -13,7 +13,7 @@ namespace ET.BUA.Entity.Model
         [Column("APP_ID")]
         [Required(ErrorMessage = "APP_ID不能为空")]
         //[MaxLength(38, ErrorMessage = "APP_ID最多不超过38个字符")]
-        public Decimal APP_ID { get; set; } = 11111;
+        public Decimal APP_ID { get; set; }
 
         [Column("APP_NAME")]
         [Display(Description = "应用系统名称")]

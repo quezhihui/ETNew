@@ -24,6 +24,11 @@
                 <img src="~/css/Images/picker_account_msa.svg" />
             </div>
             <div class="form-input">
+                <h4><label asp-for="@Model.APP_ID" class="control-label"></label></h4>
+                <input asp-for="@Model.APP_ID" class="form-control" />
+                <span asp-validation-for="@Model.APP_ID" class="text-danger"></span>
+            </div>
+            <div class="form-input">
                 <h4><label asp-for="@Model.APP_NAME" class="control-label"></label></h4>
                 <input asp-for="@Model.APP_NAME" class="form-control" />
                 <span asp-validation-for="@Model.APP_NAME" class="text-danger"></span>
