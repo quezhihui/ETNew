@@ -17,6 +17,12 @@ namespace ET.SSO.Client.Controllers
         }
 
         [Authorize]
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        [Authorize]
         public IActionResult Secure()
         {
             ViewData["Message"] = "Secure page.";

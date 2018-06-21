@@ -8,19 +8,22 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace ET.SSO.Client
+namespace ET.SSO.IdentityServer4
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
-        }
-
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-            .UseUrls("http://localhost:12293")
+            var host = new WebHostBuilder()
+                .UseKestrel()//使用Kestrel作为Web服务器
+                .UseUrls("http://localhost:44391")
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseIISIntegration()//集成IIS
                 .UseStartup<Startup>()
+                .UseApplicationInsights()
                 .Build();
+
+            host.Run();
+        }
     }
 }

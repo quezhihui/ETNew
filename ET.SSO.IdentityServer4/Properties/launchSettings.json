@@ -1,9 +1,9 @@
-{
+﻿{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:12293/",
+      "applicationUrl": "http://localhost:44391",
       "sslPort": 0
     }
   },
@@ -15,13 +15,13 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ET.SSO.Client": {
+    "ET.SSO.IdentityServer4": {
       "commandName": "Project",
       "launchBrowser": true,
+      "applicationUrl": "http://localhost:44391",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "http://localhost:12293/"
+      }
     }
   }
 }
